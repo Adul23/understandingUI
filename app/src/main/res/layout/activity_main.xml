@@ -54,7 +54,7 @@
                     android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/temphl"
+                    android:id="@+id/tempmax"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="H: 13 L: -9"
@@ -201,7 +201,7 @@
 
                     <TextView
                         android:id="@+id/today1"
-                        android:layout_width="278dp"
+                        android:layout_width="234dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="Today"
@@ -214,12 +214,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="Next 7 days"
-                        android:textColor="@color/white" />
+                        android:clickable="true"
+                        android:onClick="OnClick"
+                        android:text="Next 6 days"
+                        android:textColor="@color/white"
+                        android:textSize="24dp" />
 
                 </LinearLayout>
 
                 <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/view1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
 
